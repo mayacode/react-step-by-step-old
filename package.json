@@ -1,0 +1,30 @@
+{
+  "name": "react-step-by-step",
+  "version": "1.0.0",
+  "description": "Tutorial for young developers I work with",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayacode/react-step-by-step.git"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "lessons",
+    "examples",
+    "webpack",
+    "hot",
+    "reload",
+    "babel",
+    "build"
+  ],
+  "author": "Maja Miarecki <maja.miarecki@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mayacode/react-step-by-step/issues"
+  },
+  "homepage": "https://github.com/mayacode/react-step-by-step#readme"
+}
