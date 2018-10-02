@@ -18,5 +18,11 @@ module.exports = {
                 }
             }
         ]
+    },
+    devServer: {
+        publicPath: "/",
+        contentBase: path.resolve(__dirname, "public"),
+        watchContentBase: true,
+        compress: true
     }
 };
