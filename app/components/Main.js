@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MyButton from './MyButton';
+import BookContainer from './BookContainer';
 
 export default class Main extends Component {
     state = {
@@ -16,6 +17,8 @@ export default class Main extends Component {
             <div>
                 Hello World!
                 <MyButton number={this.state.number} clickHandler={this.clickHandler} />
+                <hr />
+                <BookContainer />
             </div>
         );
     }
