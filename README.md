@@ -7,3 +7,5 @@ basic knowledge and understanding of node, npm, git and JavaScript
 [Lesson 1 - Init the project, make first branch and commit in git repository](./Lesson1.md)
 
 [Lesson 2 - Make simple working react app](./Lesson2.md)
+
+[Lesson 3 - Make a data flow with local state](./Lesson3.md)
