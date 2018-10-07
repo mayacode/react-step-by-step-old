@@ -29,7 +29,7 @@ export default class BookContainer extends Component {
     render() {
         return (
             <section>
-                <BookSearch keyword={this.state.keyword} changeHandler={this.changeHandler} />
+                <BookSearch changeHandler={this.changeHandler} />
                 <BookList books={this.state.books}/>
             </section>
         );

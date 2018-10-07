@@ -1,4 +1,4 @@
-## Lesson 2
+## Lesson 3
 **Create local state in Main component and child, dumb component which data from state and displays them.**
 
 1. In `Main.js` add `state` object with default number of clicks - 0.

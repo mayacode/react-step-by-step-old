@@ -2,9 +2,8 @@ import React from 'react';
 
 export default ({ books }) => (
     <div>
-        {console.log(books)}
         {books.map(book => (
-            <div key={book.volumeInfo.title}>
+            <div key={book.volumeInfo.industryIdentifiers[0].identifier}>
                 <div>Title: {book.volumeInfo.title}</div>
             </div>
         ))}
