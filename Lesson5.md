@@ -23,3 +23,9 @@ component separately.
 component, it will be reflected in tests (test of changed component will fail).
 If the change was planned we can update snapshot using command:
 `npm run test -- --updateSnapshot`.
+
+7. The `test` script runs jest with `--coverage` option. In the end of the
+report it shows the test coverage table for every file with percentage of coverage.
+Creating snapshot for dumb component like `BookListItem` covers 100% of code.
+For `BookList` snapshot covers 66%, as there is additional function, which
+snapshot is note testing.
