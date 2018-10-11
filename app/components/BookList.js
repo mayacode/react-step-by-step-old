@@ -1,11 +1,9 @@
 import React from 'react';
+import BookListItem from './BookListItem';
 
-export default ({ books }) => (
-    <div>
-        {books.map(book => (
-            <div key={book.volumeInfo.industryIdentifiers[0].identifier}>
-                <div>Title: {book.volumeInfo.title}</div>
-            </div>
-        ))}
-    </div>
-);
+const renderBookItems = book => <BookListItem
+    key={book.volumeInfo.industryIdentifiers[0].identifier}
+    title={book.volumeInfo.title}
+/>;
+
+export default ({ books }) => <div>{books.map(renderBookItems)}</div>;
