@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: "development",
+    devtool: "#inline-source-map",
     entry: "./app/index.js",
     output: {
         path: path.resolve(__dirname, "public"),
@@ -12,16 +13,7 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader',
-                options: {
-                    presets: [
-                        '@babel/preset-env',
-                        '@babel/preset-react'
-                    ],
-                    plugins: [
-                        '@babel/plugin-proposal-class-properties'
-                    ]
-                }
+                loader: 'babel-loader'
             }
         ]
     },
