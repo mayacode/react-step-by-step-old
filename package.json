@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server -d",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "eslint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -37,10 +38,14 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.0-beta.6",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
+    "eslint": "^5.7.0",
+    "eslint-plugin-jest": "^21.24.1",
+    "eslint-plugin-react": "^7.11.1",
     "jest": "^23.6.0",
     "jest-cli": "^23.6.0",
     "webpack": "^4.20.2",
@@ -48,6 +53,7 @@
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },

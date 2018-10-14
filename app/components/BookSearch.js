@@ -1,12 +1,20 @@
 import React, { Fragment } from 'react';
+import { func } from 'prop-types';
 
-export default ({ changeHandler }) => (
-    <Fragment>
-        <input
-            type="text"
-            placeholder="Put title or author"
-            onChange={changeHandler}
-        />
-        <button>Search!</button>
-    </Fragment>
-)
+const BookSearch = ({ changeHandler }) => (
+  <Fragment>
+    <input
+      type="text"
+      placeholder="Put title or author"
+      onChange={changeHandler}
+    />
+    <button>Search!</button>
+  </Fragment>
+);
+
+BookSearch.displayName = 'BookSearch';
+BookSearch.propTypes = {
+  changeHandler: func,
+};
+
+export default BookSearch;
