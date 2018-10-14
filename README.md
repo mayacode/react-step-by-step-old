@@ -15,3 +15,5 @@ basic knowledge and understanding of node, npm, git and JavaScript
 [Lesson 4 - Make an API request on user action and add result to the state](./Lesson4.md)
 
 [Lesson 5 - Simple unit tests and snapshots](./Lesson5.md)
+
+[Lesson 6 - Eslint and prop types](./Lesson6.md)
