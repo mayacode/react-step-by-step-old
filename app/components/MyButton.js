@@ -1,8 +1,12 @@
 import React, { Fragment } from 'react';
 
-export default ({clickHandler, number}) => (
+const MyButton = ({clickHandler, number}) => (
   <Fragment>
     <button onClick={clickHandler}>Click me!</button>
-        You clicked me {number} times
+    You clicked me {number} times
   </Fragment>
 );
+
+MyButton.displayName = 'MyButton';
+
+export default MyButton;

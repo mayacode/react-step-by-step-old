@@ -6,4 +6,8 @@ const renderBookItems = book => <BookListItem
   title={book.volumeInfo.title}
 />;
 
-export default ({ books }) => <div>{books.map(renderBookItems)}</div>;
+const BookList = ({ books }) => <div>{books.map(renderBookItems)}</div>;
+
+BookList.displayName = 'BookList';
+
+export default BookList;

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-export default ({ changeHandler }) => (
+const BookSearch = ({ changeHandler }) => (
   <Fragment>
     <input
       type="text"
@@ -10,3 +10,7 @@ export default ({ changeHandler }) => (
     <button>Search!</button>
   </Fragment>
 );
+
+BookSearch.displayName = 'BookSearch';
+
+export default BookSearch;

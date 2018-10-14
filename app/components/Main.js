@@ -7,6 +7,8 @@ export default class Main extends Component {
     number: 0,
   };
 
+  displayName = 'Main';
+
   clickHandler = () => {
     const num = this.state.number;
     this.setState({ number: num + 1 });

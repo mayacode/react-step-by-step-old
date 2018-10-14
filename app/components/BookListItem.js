@@ -1,3 +1,7 @@
 import React from 'react';
 
-export default ({ title }) => <div><span>Title:</span> {title}</div>;
+const BookListItem = ({ title }) => <div><span>Title:</span> {title}</div>;
+
+BookListItem.displayName = 'BookListItem';
+
+export default BookListItem;

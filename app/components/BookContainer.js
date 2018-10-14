@@ -10,6 +10,8 @@ export default class BookContainer extends Component {
     books: []
   };
 
+  displayName = 'BookContainer';
+
   componentDidUpdate = (prevProps, prevState) => {
     const { keyword } = this.state;
     if (keyword.length > 2 && prevState.keyword !== keyword) {
