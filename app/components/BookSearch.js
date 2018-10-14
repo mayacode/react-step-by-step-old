@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { func } from 'prop-types';
 
 const BookSearch = ({ changeHandler }) => (
   <Fragment>
@@ -12,5 +13,8 @@ const BookSearch = ({ changeHandler }) => (
 );
 
 BookSearch.displayName = 'BookSearch';
+BookSearch.propTypes = {
+  changeHandler: func,
+};
 
 export default BookSearch;

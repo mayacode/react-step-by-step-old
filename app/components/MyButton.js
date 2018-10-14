@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { func, number } from 'prop-types';
 
 const MyButton = ({clickHandler, number}) => (
   <Fragment>
@@ -8,5 +9,9 @@ const MyButton = ({clickHandler, number}) => (
 );
 
 MyButton.displayName = 'MyButton';
+MyButton.propTypes = {
+  clickHandler: func,
+  number: number,
+};
 
 export default MyButton;
