@@ -1,10 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BookList /> should match snapshot 1`] = `
+exports[`<BookList /> matches a snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <BookList
-    books={Array []}
+    books={
+      Array [
+        Object {
+          "id": "1234qwer",
+          "volumeInfo": Object {
+            "title": "A Book",
+          },
+        },
+        Object {
+          "id": "1235qwer",
+          "volumeInfo": Object {
+            "title": "A Book 2",
+          },
+        },
+      ]
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -19,10 +34,40 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [],
+      "children": Array [
+        <BookListItem
+          title="A Book"
+        />,
+        <BookListItem
+          title="A Book 2"
+        />,
+      ],
     },
     "ref": null,
-    "rendered": Array [],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1234qwer",
+        "nodeType": "function",
+        "props": Object {
+          "title": "A Book",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1235qwer",
+        "nodeType": "function",
+        "props": Object {
+          "title": "A Book 2",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -31,10 +76,40 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [],
+        "children": Array [
+          <BookListItem
+            title="A Book"
+          />,
+          <BookListItem
+            title="A Book 2"
+          />,
+        ],
       },
       "ref": null,
-      "rendered": Array [],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1234qwer",
+          "nodeType": "function",
+          "props": Object {
+            "title": "A Book",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1235qwer",
+          "nodeType": "function",
+          "props": Object {
+            "title": "A Book 2",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
   ],
