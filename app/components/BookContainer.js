@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import BookSearch from './BookSearch';
 import BookList from './BookList';
 
-const googleBooksSearchAPI = 'https://www.googleapis.com/books/v1/volumes?q=';
+export const googleBooksSearchAPI = 'https://www.googleapis.com/books/v1/volumes?q=';
 
 export default class BookContainer extends Component {
   state = {
@@ -12,14 +12,17 @@ export default class BookContainer extends Component {
 
   displayName = 'BookContainer';
 
-  componentDidUpdate = (prevProps, prevState) => {
+  updateBooks = books => this.setState({ books });
+
+  getBooks = keyword => fetch(`${googleBooksSearchAPI}${keyword}`)
+    .then(response => response.json())
+    .then(myJson => this.updateBooks(myJson.items))
+    .catch(error => console.log('error', error)); // eslint-disable-line no-console
+
+  componentDidUpdate = async (prevProps, prevState) => {
     const { keyword } = this.state;
     if (keyword.length > 2 && prevState.keyword !== keyword) {
-      fetch(`${googleBooksSearchAPI}${keyword}`)
-        .then(response => response.json())
-        .then(myJson => {
-          this.setState({ books: myJson.items });
-        });
+      this.getBooks(keyword);
     }
   };
 

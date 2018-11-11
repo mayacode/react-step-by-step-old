@@ -15,7 +15,7 @@ BookList.propTypes = {
       title: string,
     }),
     id: string,
-  })),
+  })).isRequired,
 };
 
 export default BookList;

@@ -5,7 +5,7 @@ const BookListItem = ({ title }) => <div><span>Title:</span> {title}</div>;
 
 BookListItem.displayName = 'BookListItem';
 BookListItem.propTypes = {
-  title: string,
+  title: string.isRequired,
 };
 
 export default BookListItem;
