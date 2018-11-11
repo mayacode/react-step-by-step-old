@@ -1,26 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BookList /> matches a snapshot 1`] = `
+exports[`<Main /> matches a snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <BookList
-    books={
-      Array [
-        Object {
-          "id": "1234qwer",
-          "volumeInfo": Object {
-            "title": "A Book",
-          },
-        },
-        Object {
-          "id": "1235qwer",
-          "volumeInfo": Object {
-            "title": "A Book 2",
-          },
-        },
-      ]
-    }
-  />,
+  Symbol(enzyme.__unrendered__): <Main />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -35,22 +18,25 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <BookListItem
-          title="A Book"
+        "Hello World!",
+        <MyButton
+          clickHandler={[Function]}
+          number={0}
         />,
-        <BookListItem
-          title="A Book 2"
-        />,
+        <hr />,
+        <BookContainer />,
       ],
     },
     "ref": null,
     "rendered": Array [
+      "Hello World!",
       Object {
         "instance": null,
-        "key": "1234qwer",
+        "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "title": "A Book",
+          "clickHandler": [Function],
+          "number": 0,
         },
         "ref": null,
         "rendered": null,
@@ -58,11 +44,18 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1235qwer",
-        "nodeType": "function",
-        "props": Object {
-          "title": "A Book 2",
-        },
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -77,22 +70,25 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <BookListItem
-            title="A Book"
+          "Hello World!",
+          <MyButton
+            clickHandler={[Function]}
+            number={0}
           />,
-          <BookListItem
-            title="A Book 2"
-          />,
+          <hr />,
+          <BookContainer />,
         ],
       },
       "ref": null,
       "rendered": Array [
+        "Hello World!",
         Object {
           "instance": null,
-          "key": "1234qwer",
+          "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "title": "A Book",
+            "clickHandler": [Function],
+            "number": 0,
           },
           "ref": null,
           "rendered": null,
@@ -100,11 +96,18 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1235qwer",
-          "nodeType": "function",
-          "props": Object {
-            "title": "A Book 2",
-          },
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

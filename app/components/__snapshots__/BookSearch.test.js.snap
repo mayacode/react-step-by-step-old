@@ -1,25 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BookList /> matches a snapshot 1`] = `
+exports[`<BookSearch /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <BookList
-    books={
-      Array [
-        Object {
-          "id": "1234qwer",
-          "volumeInfo": Object {
-            "title": "A Book",
-          },
-        },
-        Object {
-          "id": "1235qwer",
-          "volumeInfo": Object {
-            "title": "A Book 2",
-          },
-        },
-      ]
-    }
+  Symbol(enzyme.__unrendered__): <BookSearch
+    changeHandler={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -32,85 +17,93 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
-        <BookListItem
-          title="A Book"
+        <input
+          onChange={[Function]}
+          placeholder="Put title or author"
+          type="text"
         />,
-        <BookListItem
-          title="A Book 2"
-        />,
+        <button>
+          Search!
+        </button>,
       ],
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "1234qwer",
-        "nodeType": "function",
+        "key": undefined,
+        "nodeType": "host",
         "props": Object {
-          "title": "A Book",
+          "onChange": [Function],
+          "placeholder": "Put title or author",
+          "type": "text",
         },
         "ref": null,
         "rendered": null,
-        "type": [Function],
+        "type": "input",
       },
       Object {
         "instance": null,
-        "key": "1235qwer",
-        "nodeType": "function",
+        "key": undefined,
+        "nodeType": "host",
         "props": Object {
-          "title": "A Book 2",
+          "children": "Search!",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": "Search!",
+        "type": "button",
       },
     ],
-    "type": "div",
+    "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
-          <BookListItem
-            title="A Book"
+          <input
+            onChange={[Function]}
+            placeholder="Put title or author"
+            type="text"
           />,
-          <BookListItem
-            title="A Book 2"
-          />,
+          <button>
+            Search!
+          </button>,
         ],
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "1234qwer",
-          "nodeType": "function",
+          "key": undefined,
+          "nodeType": "host",
           "props": Object {
-            "title": "A Book",
+            "onChange": [Function],
+            "placeholder": "Put title or author",
+            "type": "text",
           },
           "ref": null,
           "rendered": null,
-          "type": [Function],
+          "type": "input",
         },
         Object {
           "instance": null,
-          "key": "1235qwer",
-          "nodeType": "function",
+          "key": undefined,
+          "nodeType": "host",
           "props": Object {
-            "title": "A Book 2",
+            "children": "Search!",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": "Search!",
+          "type": "button",
         },
       ],
-      "type": "div",
+      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {

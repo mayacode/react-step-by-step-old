@@ -10,8 +10,8 @@ const MyButton = ({clickHandler, number}) => (
 
 MyButton.displayName = 'MyButton';
 MyButton.propTypes = {
-  clickHandler: func,
-  number: number,
+  clickHandler: func.isRequired,
+  number: number.isRequired,
 };
 
 export default MyButton;

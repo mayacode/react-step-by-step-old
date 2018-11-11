@@ -14,7 +14,7 @@ const BookSearch = ({ changeHandler }) => (
 
 BookSearch.displayName = 'BookSearch';
 BookSearch.propTypes = {
-  changeHandler: func,
+  changeHandler: func.isRequired,
 };
 
 export default BookSearch;
