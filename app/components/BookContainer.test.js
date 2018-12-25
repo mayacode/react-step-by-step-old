@@ -1,12 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import fetchMock from 'fetch-mock';
 
+import { mockFetch } from '../../config/tools';
 import BookContainer, { googleBooksSearchAPI } from './BookContainer';
 import BookSearch from './BookSearch';
 import BookList from './BookList';
-
-fetchMock.config.fallbackToNetwork = true;
 
 const bookListObj = [
   {
@@ -95,11 +93,9 @@ describe('<BookContainer /> fetches', () => {
     const wrapper = shallow(<BookContainer />);
     const mockData = { items: bookListObj };
     const keyword = 'dun';
-    fetchMock.get(`${googleBooksSearchAPI}${keyword}`, mockData);
+    global.fetch = mockFetch(mockData);
 
     await wrapper.instance().getBooks(keyword);
     expect(wrapper.state().books).toEqual(bookListObj);
-
-    fetchMock.restore();
   });
 });
