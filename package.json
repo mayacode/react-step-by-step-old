@@ -67,7 +67,8 @@
       "app/**/*.js"
     ],
     "coveragePathIgnorePatterns": [
-      "app/index.js"
+      "app/index.js",
+      "app/reducers.js"
     ],
     "testMatch": [
       "<rootDir>/app/**/?(*.)(spec|test).{js,jsx,mjs}"

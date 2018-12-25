@@ -1,3 +1,5 @@
+import { MY_BUTTON_CLICKED } from './constants';
+
 export const clickedMyButton = () => ({
-  type: 'CLICKED',
+  type: MY_BUTTON_CLICKED,
 });
