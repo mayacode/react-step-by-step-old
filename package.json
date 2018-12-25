@@ -52,19 +52,23 @@
     "jest-cli": "^23.6.0",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.1.14",
+    "whatwg-fetch": "^3.0.0"
   },
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.7.0-alpha.2",
-    "react-dom": "^16.7.0-alpha.2"
+    "react-dom": "^16.7.0-alpha.2",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1"
   },
   "jest": {
     "collectCoverageFrom": [
       "app/**/*.js"
     ],
     "coveragePathIgnorePatterns": [
-      "app/index.js"
+      "app/index.js",
+      "app/reducers.js"
     ],
     "testMatch": [
       "<rootDir>/app/**/?(*.)(spec|test).{js,jsx,mjs}"

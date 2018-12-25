@@ -1,11 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import MyButton from './MyButton';
+import MyButton from '../MyButton';
 
 describe('<MyButton />', () => {
+  let wrapper;
+
+  beforeAll(() => {
+    wrapper = shallow(<MyButton clickHandler={() => undefined} clicks={1} />);
+  });
+
   it('should match snapshot', () => {
-    const wrapper = shallow(<MyButton clickHandler={() => undefined} number={1} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

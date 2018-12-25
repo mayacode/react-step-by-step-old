@@ -1,0 +1,1 @@
+export const MY_BUTTON_CLICKED = 'MY_BUTTON_CLICKED';
