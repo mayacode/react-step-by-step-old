@@ -31,32 +31,33 @@
   },
   "homepage": "https://github.com/mayacode/react-step-by-step#readme",
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/polyfill": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
-    "babel-loader": "^8.0.0-beta.6",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "eslint": "^5.7.0",
-    "eslint-plugin-jest": "^21.24.1",
+    "babel-loader": "^8.0.4",
+    "babel-polyfill": "^7.0.0-beta.3",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "eslint": "^5.11.0",
+    "eslint-plugin-jest": "^21.27.2",
     "eslint-plugin-react": "^7.11.1",
-    "fetch-mock": "^7.2.5",
+    "fetch-mock": "^7.2.7",
     "jest": "^23.6.0",
     "jest-cli": "^23.6.0",
-    "webpack": "^4.20.2",
+    "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
   },
   "jest": {
     "collectCoverageFrom": [
