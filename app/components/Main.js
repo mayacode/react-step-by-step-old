@@ -1,27 +1,17 @@
-import React, { Component } from 'react';
-import MyButton from './MyButton';
+import React from 'react';
+
+import MyButton from './Main/container';
 import BookContainer from './BookContainer';
 
-export default class Main extends Component {
-  state = {
-    number: 0,
-  };
+const Main = () => (
+  <div>
+    Hello World!
+    <MyButton />
+    <hr />
+    <BookContainer />
+  </div>
+);
 
-  displayName = 'Main';
+Main.displayName = 'Main';
 
-  clickHandler = () => {
-    const num = this.state.number;
-    this.setState({ number: num + 1 });
-  };
-
-  render() {
-    return (
-      <div>
-        Hello World!
-        <MyButton number={this.state.number} clickHandler={this.clickHandler} />
-        <hr />
-        <BookContainer />
-      </div>
-    );
-  }
-}
+export default Main;

@@ -1,17 +1,17 @@
 import React, { Fragment } from 'react';
 import { func, number } from 'prop-types';
 
-const MyButton = ({clickHandler, number}) => (
+const MyButton = ({clickHandler, clicks}) => (
   <Fragment>
     <button onClick={clickHandler}>Click me!</button>
-    You clicked me {number} times
+    You clicked me {clicks} times
   </Fragment>
 );
 
 MyButton.displayName = 'MyButton';
 MyButton.propTypes = {
   clickHandler: func.isRequired,
-  number: number.isRequired,
+  clicks: number.isRequired,
 };
 
 export default MyButton;
