@@ -17,3 +17,5 @@ basic knowledge and understanding of node, npm, git and JavaScript
 [Lesson 5 - Simple unit tests and snapshots](./Lesson5.md)
 
 [Lesson 6 - Eslint and prop types](./Lesson6.md)
+
+[Lesson 7 - Redux and application store](./Lesson7.md)
