@@ -19,3 +19,5 @@ basic knowledge and understanding of node, npm, git and JavaScript
 [Lesson 6 - Eslint and prop types](./Lesson6.md)
 
 [Lesson 7 - Redux and application store](./Lesson7.md)
+
+[Lesson 8 - React Context use case](./Lesson8.md)
